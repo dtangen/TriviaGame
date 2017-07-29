@@ -2,16 +2,91 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<title>Trivia Game</title>
-
-
 </head>
-<body>
 
-<script type="text/javascript" src="./assets/javascript/game.js"></script>
+<body>
+<div class="container">
+	<div class="row align-center">
+		<h1>NFL Trivia</h1>
+	</div>
+
+<div id="timeRemaining">
+	<p>Time Remaining: 30 seconds</p>
+</div>
+
+<div id="correct"></div>
+<div id="incorrect"></div>
+<div id="unanswered"></div>
+
+
+<div id="questions">
+	<p>Question 1<br>
+		Which NFL Team went to four straight Super Bowls?
+	</p>
+
+	<form action="question1">
+	  <input type="radio" name="answer1" value="wrong" id="NE1"> New England Patriots<br>
+	  <input type="radio" name="answer1" value="wrong" id="DAL1"> Dallas Cowboys<br>
+	  <input type="radio" name="answer1" value="correct" id="BUF1"> Buffalo Bills<br>
+	  <input type="radio" name="answer1" value="wrong" id="SF1"> San Francisco 49ers<br>
+	</form>
+	<br>
+
+	<p>Question 2<br>
+		Which NFL Team won the first Super Bowl?
+	</p>
+
+	<form action="question2">
+	  <input type="radio" name="answer2" value="wrong" id="KC2"> Kansas City Chiefs<br>
+	  <input type="radio" name="answer2" value="wrong" id="MIN2"> Minnesota Vikings<br>
+	  <input type="radio" name="answer2" value="correct" id="GB2"> Green Bay Packers<br>
+	  <input type="radio" name="answer2" value="wrong" id="PIT2"> Pittsburgh Steelers<br>
+	</form>
+	<br>
+
+	<p>Question 3<br>
+		Who is the NFL Coach with the most regular season wins in his career?
+	</p>
+
+	<form action="question3">
+	  <input type="radio" name="answer3" value="correct" id="DS3"> Don Shula<br>
+	  <input type="radio" name="answer3" value="wrong" id="TL3"> Tom Landry<br>
+	  <input type="radio" name="answer3" value="correct" id="BB3"> Bill Belichick<br>
+	  <input type="radio" name="answer3" value="wrong" id="CN3"> Chuck Noll<br>
+	</form>
+	<br>
+
+	<p>Question 4<br>
+		Which NFL Player holds the record for most consecutive starts?
+	</p>
+
+	<form action="question4">
+	  <input type="radio" name="answer4" value="wrong" id="MT4"> Mick Tinglehoff<br>
+	  <input type="radio" name="answer4" value="wrong" id="WS4"> Will Shields<br>
+	  <input type="radio" name="answer4" value="wrong" id="JM4"> Jim Marshall<br>
+	  <input type="radio" name="answer4" value="correct" id="BF4"> Brett Favre<br>
+	</form>
+	<br>
+
+	<p>Question 5<br>
+		Which NFL Team has the highest number of players in the Pro Football Hall of Fame?
+	</p>
+
+	<form action="question5">
+	  <input type="radio" name="answer5" value="correct" id="CHI5"> Chicago Bears<br>
+	  <input type="radio" name="answer5" value="wrong" id="DAL5"> Dallas Cowboys<br>
+	  <input type="radio" name="answer5" value="wrong" id="GB5"> Green Bay Packers<br>
+	  <input type="radio" name="answer5" value="wrong" id="SF5"> San Francisco 49ers<br>
+	</form>	
+
+</div>
+</div>
+
+<script type="text/javascript" src="./assets/javascript/app.js"></script>
 </body>
 </html>
